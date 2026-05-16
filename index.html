@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Jie Zhang — Personal Portfolio</title>
+</head>
+<body>
+
+    <!-- ═══ NAVBAR ═══ -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#top"><em>Jie Zhang</em></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ═══ HERO ═══ -->
+    <header id="top" class="hero">
+        <div class="container">
+            <div class="hero-meta d-flex justify-content-between align-items-baseline mb-5 reveal">
+                <span class="meta-label">Personal Portfolio</span>
+                <span class="meta-label meta-roman"><em>—</em> Vol. I</span>
+                <span class="meta-label">Berkeley · 2026</span>
+            </div>
+
+            <h1 class="display-1 hero-title mb-3">
+                <span class="d-block reveal">Jie</span>
+                <span class="d-block reveal"><em>Zhang.</em></span>
+            </h1>
+
+            <div class="hero-rule reveal"></div>
+
+            <div class="row align-items-end g-5 mt-4">
+                <div class="col-12 col-lg-7 reveal">
+                    <p class="hero-statement">
+                        I make things that <em>argue with their own assumptions</em>. Medical devices that question what "better" means. Memory tools for the senses we don't archive. Critical installations that take their own conclusions seriously.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-5 reveal">
+                    <div class="hero-locator">
+                        <div class="locator-row">
+                            <span class="locator-key">Currently</span>
+                            <span class="locator-val"><em>MDes</em> · UC Berkeley</span>
+                        </div>
+                        <div class="locator-row">
+                            <span class="locator-key">Previously</span>
+                            <span class="locator-val"><em>BA</em> · Product Design,<br>Tongji University</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#work" class="hero-scroll">
+            <span class="meta-label">Scroll</span>
+            <span class="hero-scroll-line"></span>
+        </a>
+    </header>
+
+    <!-- ═══ SECTION I · WORK ═══ -->
+    <section id="work" class="section">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-roman"><em>I.</em></span>
+                <span class="section-label">— Chapter 01 —</span>
+                <h2 class="section-title">Selected Work</h2>
+                <p class="section-lede">Four projects spanning medical hardware, critical installation, computer vision, and accessibility.</p>
+            </div>
+
+            <div class="row g-4 g-lg-5 justify-content-center mt-2">
+
+                <!-- 01 · AI+Acupuncture -->
+                <div class="col-12 col-md-6">
+                    <div class="work-card h-100">
+                        <div class="ratio ratio-1x1 work-card-media">
+                            <img src="assets/acupuncture.jpg" class="card-img-top" alt="AI+Acupuncture — Smart medical device on a desk">
+                            <span class="work-card-hint">View case <em>→</em></span>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-baseline mb-3">
+                                <span class="card-num">01 <span class="of">/ 04</span></span>
+                                <span class="badge text-bg-dark">2022 · Solo</span>
+                            </div>
+                            <h5 class="card-title">AI<span class="accent">+</span>Acupuncture</h5>
+                            <p class="card-text">A smart medical device using <em>EMG sensing</em> and computer vision to detect the "de-qi" sensation in real time — bringing TCM into a feedback loop with AI.</p>
+                            <button class="btn btn-link card-cta" data-bs-toggle="modal" data-bs-target="#acupunctureModal">
+                                Read case <span class="arrow">→</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 02 · Data Feeder -->
+                <div class="col-12 col-md-6">
+                    <div class="work-card h-100">
+                        <div class="ratio ratio-1x1 work-card-media">
+                            <img src="assets/data-feeder.jpg" class="card-img-top" alt="Data Feeder — Critical installation with sensor box">
+                            <span class="work-card-hint">View case <em>→</em></span>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-baseline mb-3">
+                                <span class="card-num">02 <span class="of">/ 04</span></span>
+                                <span class="badge text-bg-dark">2022 · Co-author</span>
+                            </div>
+                            <h5 class="card-title">Data Feeder</h5>
+                            <p class="card-text">A critical installation about <em>giving up identity to algorithms</em>. Visitors print their personal data, feed it to a machine, and watch their reflection turn into someone else.</p>
+                            <button class="btn btn-link card-cta" data-bs-toggle="modal" data-bs-target="#feederModal">
+                                Read case <span class="arrow">→</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 03 · Sleepwalker Autopilot -->
+                <div class="col-12 col-md-6">
+                    <div class="work-card h-100">
+                        <div class="ratio ratio-1x1 work-card-media">
+                            <img src="assets/sleepwalker.jpg" class="card-img-top" alt="Sleepwalker Autopilot — Wearable helmet">
+                            <span class="work-card-hint">View case <em>→</em></span>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-baseline mb-3">
+                                <span class="card-num">03 <span class="of">/ 04</span></span>
+                                <span class="badge text-bg-dark">2023 · Solo</span>
+                            </div>
+                            <h5 class="card-title">Sleepwalker Autopilot</h5>
+                            <p class="card-text">A vision-guided autopilot for sleepwalkers. <em>Detects hazards in real time</em> and gently nudges the wearer back to safety — without ever waking them.</p>
+                            <button class="btn btn-link card-cta" data-bs-toggle="modal" data-bs-target="#sleepwalkerModal">
+                                Read case <span class="arrow">→</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 04 · Emora -->
+                <div class="col-12 col-md-6">
+                    <div class="work-card h-100">
+                        <div class="ratio ratio-1x1 work-card-media">
+                            <img src="assets/emora.jpg" class="card-img-top" alt="Emora — Multi-modal accessibility device">
+                            <span class="work-card-hint">View case <em>→</em></span>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-baseline mb-3">
+                                <span class="card-num">04 <span class="of">/ 04</span></span>
+                                <span class="badge text-bg-dark">2026 · Team of 4</span>
+                            </div>
+                            <h5 class="card-title">Emora</h5>
+                            <p class="card-text">An AI accessibility companion for blind users. <em>Multi-modal</em> — turns ambient surroundings into spoken, emotionally-aware descriptions. Built around real Lighthouse community needs.</p>
+                            <button class="btn btn-link card-cta" data-bs-toggle="modal" data-bs-target="#emoraModal">
+                                Read case <span class="arrow">→</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="ornament text-center mt-5"><em>✦ &nbsp;&nbsp; ✦ &nbsp;&nbsp; ✦</em></div>
+        </div>
+    </section>
+
+    <!-- ═══ SECTION II · ABOUT ═══ -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-roman"><em>II.</em></span>
+                <span class="section-label">— Chapter 02 —</span>
+                <h2 class="section-title">A short introduction</h2>
+            </div>
+
+            <div class="row g-5 align-items-start mt-3">
+                <div class="col-12 col-lg-7 reveal">
+                    <p class="about-prose">
+                        I'm a designer working between <em>research, fabrication, and emerging tech</em>. The goal isn't to be a generalist — it's to make sure each side keeps the other honest. <span class="accent">Engineering on its own gets clever and forgets why; concept on its own gets earnest and forgets how.</span>
+                    </p>
+                    <p class="about-prose">
+                        Currently completing my <em>Master of Design at UC Berkeley</em>, where my work moves between accessibility, multi-sensory interfaces, and speculative future systems. Before Berkeley, four years of <em>Product Design at Tongji University</em> in Shanghai — industrial design, critical making, and installation work that sat halfway between gallery and laboratory.
+                    </p>
+                </div>
+
+                <div class="col-12 col-lg-5 reveal">
+                    <div class="credentials">
+                        <h6 class="cred-label">— Education —</h6>
+                        <ul class="cred-list">
+                            <li>
+                                <span class="cred-year">2024 — Now</span>
+                                <span class="cred-item"><em>Master of Design</em><span class="cred-org">UC Berkeley</span></span>
+                            </li>
+                            <li>
+                                <span class="cred-year">2020 — 24</span>
+                                <span class="cred-item"><em>BA · Product Design</em><span class="cred-org">Tongji University · Shanghai</span></span>
+                            </li>
+                        </ul>
+
+                        <h6 class="cred-label mt-4">— Awards —</h6>
+                        <ul class="cred-list">
+                            <li><span class="cred-item full"><em>Red Dot Design Award</em></span></li>
+                            <li><span class="cred-item full"><em>A' Design Award</em><span class="cred-org">Italy</span></span></li>
+                            <li><span class="cred-item full"><em>"Star of the Silk Road"</em><span class="cred-org">International Art Competition</span></span></li>
+                            <li><span class="cred-item full"><em>2021 TEDA Cup</em><span class="cred-org">International Youth Design</span></span></li>
+                        </ul>
+
+                        <h6 class="cred-label mt-4">— Selected Talks &amp; Exhibitions —</h6>
+                        <ul class="cred-list">
+                            <li><span class="cred-item full"><em>32nd WDO Congress</em><span class="cred-org">Speaker</span></span></li>
+                            <li><span class="cred-item full"><em>13th Shanghai Biennale</em><span class="cred-org">Participating Artist</span></span></li>
+                            <li><span class="cred-item full"><em>World Design Capital Conference</em><span class="cred-org">Forum Panel</span></span></li>
+                            <li><span class="cred-item full"><em>2nd Guiyang Industrial Expo</em><span class="cred-org">Exhibited Work</span></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ SECTION III · CONTACT ═══ -->
+    <section id="contact" class="section section-contact">
+        <div class="container">
+            <div class="section-head reveal text-center">
+                <span class="section-roman"><em>III.</em></span>
+                <span class="section-label">— Chapter 03 · End —</span>
+                <h2 class="section-title">Let's talk.</h2>
+                <p class="section-lede mx-auto" style="max-width: 640px;">
+                    The fastest way to start a conversation — <em>just write to me.</em>
+                </p>
+            </div>
+
+            <div class="text-center reveal mt-4">
+                <a href="mailto:player1_zhang@berkeley.edu" class="contact-email">
+                    player1_zhang@berkeley.edu &nbsp;<span class="arrow">→</span>
+                </a>
+                <p class="contact-note mt-4">
+                    <em>Open to full-time roles, collaborations, and slow conversations about design.</em>
+                </p>
+            </div>
+
+            <div class="signed text-center mt-5 reveal">
+                <em>— Signed,</em><br>
+                <span class="signed-name"><em>Jie</em></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-baseline">
+                <div class="col-12 col-md-4 text-center text-md-start mb-2 mb-md-0">
+                    <small class="footer-mono">© 2026 Jie Zhang</small>
+                </div>
+                <div class="col-12 col-md-4 text-center mb-2 mb-md-0">
+                    <small class="footer-mono">Set in <em>Fraunces</em>, <em>Inter</em></small>
+                </div>
+                <div class="col-12 col-md-4 text-center text-md-end">
+                    <small class="footer-mono"><a href="#top">↑ Top</a></small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ═══ MODALS ═══ -->
+
+    <!-- AI+Acupuncture Modal -->
+    <div class="modal fade" id="acupunctureModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <span class="modal-eyebrow">— Case 01 / 04 · 2022 · Smart Medical Device · Solo —</span>
+                        <h3 class="modal-title">AI<span class="accent">+</span>Acupuncture</h3>
+                        <p class="modal-subtitle"><em>TCM in a feedback loop with AI.</em></p>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/acupuncture.jpg" class="modal-hero img-fluid" alt="AI+Acupuncture device">
+                    <p class="lead">A smart medical device that uses EMG sensing and computer vision to detect the "de-qi" sensation — and adjust treatment in real time.</p>
+                    <p>Traditional Chinese Medicine relies on the practitioner's ability to feel the moment when needle and meridian "click" — the <em>de-qi</em> response. This device makes that moment <em>legible</em>: surface EMG detects the muscle-twitch signature, a phone-mounted camera locks onto the patch position, and a low-power laser delivers the controlled stimulus.</p>
+                    <p><strong>The hardware splits into three calm parts</strong> — eight magnetic patches, a transparent PMMA charging base, and a phone that becomes the eyes of the system.</p>
+                    <div class="modal-stats">
+                        <div><strong>8</strong><small>Patches</small></div>
+                        <div><strong>680<span class="unit">nm</span></strong><small>Laser wavelength</small></div>
+                        <div><strong>2</strong><small>International Awards</small></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Data Feeder Modal -->
+    <div class="modal fade" id="feederModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <span class="modal-eyebrow">— Case 02 / 04 · 2022 · Critical Installation · Co-author —</span>
+                        <h3 class="modal-title">Data Feeder</h3>
+                        <p class="modal-subtitle"><em>Feed your data twin.</em></p>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/data-feeder.jpg" class="modal-hero img-fluid" alt="Data Feeder installation">
+                    <p class="lead">A critical installation about <em>giving up identity to algorithms</em> — one piece of data at a time.</p>
+                    <p>Visitors print their own personal data (fingerprint, face scan, voice sample) onto paper. They feed the paper to a machine. Behind a one-way mirror, their digital twin gradually <em>brightens to life</em> — in four stages, from clear reflection to a twin that breaks free and walks away.</p>
+                    <p>The work didn't ask <em>"what is a digital twin?"</em> — it asked <strong>"would you feed yours?"</strong></p>
+                    <div class="modal-stats">
+                        <div><strong>4</strong><small>Brightening stages</small></div>
+                        <div><strong>3</strong><small>Data inputs</small></div>
+                        <div><strong>1</strong><small>Gallery space</small></div>
+                    </div>
+                    <p class="modal-footnote"><em>Co-authored with Xiang Yangyang. My contribution: research, concept, animation, build.</em></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sleepwalker Autopilot Modal -->
+    <div class="modal fade" id="sleepwalkerModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <span class="modal-eyebrow">— Case 03 / 04 · 2023 · Speculative Wearable · Solo —</span>
+                        <h3 class="modal-title">Sleepwalker Autopilot</h3>
+                        <p class="modal-subtitle"><em>A nightly guardian.</em></p>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/sleepwalker.jpg" class="modal-hero img-fluid" alt="Sleepwalker Autopilot helmet">
+                    <p class="lead">An autopilot for sleepwalkers — vision-guided hazard detection and a soft physical redirect, all while the wearer keeps sleeping.</p>
+                    <p>Sleepwalking affects <em>up to 4% of adults</em> and the existing tools either wake the wearer (defeating the purpose of sleep) or do nothing at all. Sleepwalker Autopilot takes a different angle: <em>vision-based hazard detection</em> running continuously through the night, with a soft physical redirect — the wearer never wakes, but never reaches the stairs.</p>
+                    <p>Inspired by the form language of <em>bone and skeleton</em> — protective without armouring, present without dominating. <strong>The form admits the body underneath.</strong></p>
+                    <div class="modal-stats">
+                        <div><strong>240<span class="unit">ms</span></strong><small>End-to-end latency</small></div>
+                        <div><strong>4<span class="unit">%</span></strong><small>Adult prevalence</small></div>
+                        <div><strong>43</strong><small>Bench test runs</small></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Emora Modal -->
+    <div class="modal fade" id="emoraModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <span class="modal-eyebrow">— Case 04 / 04 · 2026 · Multi-modal Product · Team of 4 —</span>
+                        <h3 class="modal-title">Emora</h3>
+                        <p class="modal-subtitle"><em>A companion for the blind community.</em></p>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/emora.jpg" class="modal-hero img-fluid" alt="Emora device">
+                    <p class="lead">An AI accessibility companion that turns ambient surroundings into emotionally-aware, spoken descriptions.</p>
+                    <p>Built around <em>real Lighthouse community needs</em>. The product combines computer vision, NLP, and a hardware device into a multi-modal tool — three modes (Free, Focus, Find) covering different blind-user contexts.</p>
+                    <p>What separates Emora from typical accessibility tech: it doesn't just describe what's there. <em>It translates the felt quality of a space</em> — the warmth of light through a window, the energy of a crowd, the quiet of an empty room. <strong>Translation, not capture.</strong></p>
+                    <div class="modal-stats">
+                        <div><strong>3</strong><small>User modes</small></div>
+                        <div><strong>4</strong><small>Team members</small></div>
+                        <div><strong>2</strong><small>Lighthouse interviews</small></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══ Bootstrap JS ═══ -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- ═══ Enhancements ═══ -->
+    <script>
+        // Navbar background change on scroll
+        const nav = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 60);
+        }, { passive: true });
+
+        // Reveal on scroll
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('in');
+                    io.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+
+        document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    </script>
+</body>
+</html>
